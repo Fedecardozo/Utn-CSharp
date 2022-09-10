@@ -48,7 +48,8 @@ namespace Clase06_Ejer02
             //MessageBox.Show("Hola mundo","Hola",MessageBoxButtons.OK,MessageBoxIcon.Stop);
 
             this.lstTabla.Items.Clear();
-            this.textNumero.Text = "";
+            //this.textNumero.Text = "";
+            this.textNumero.Clear();
 
         }
 
@@ -59,7 +60,10 @@ namespace Clase06_Ejer02
 
             if(e.KeyChar == (char)Keys.Enter)
             {
-                //Agrega  un item y desarrollar un metodo para que haga la tabla de multiplicar
+                //Limpio antes de ingresar
+                this.lstTabla.Items.Clear();
+
+                //Agrega  un item y metodo para que haga la tabla de multiplicar
                 this.multiplicar(this.textNumero.Text);
             }
         }
