@@ -109,19 +109,19 @@ namespace Clase06_Ejer04
                 {
                     foreach  (Control controles in controlesGroupBox.Controls)
                     {
-                        if(controles is TextBox)
+                        if(controles is TextBox txtBox)
                         {
-                            ((TextBox)controles).Clear();
+                            txtBox.Clear();
                             continue;
                         }
-                        if (controles is ListBox)
+                        if (controles is ListBox list)
                         {
-                            ((ListBox)controles).Items.Clear();
+                            list.Items.Clear();
                             continue;
                         }
-                        if (controles is RadioButton)
+                        if (controles is RadioButton rBtn)
                         {
-                            ((RadioButton)controles).Checked = false;
+                            rBtn.Checked = false;
                             continue;
                         }
                     }
