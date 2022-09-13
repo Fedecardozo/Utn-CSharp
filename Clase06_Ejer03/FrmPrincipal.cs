@@ -78,9 +78,19 @@ namespace Clase06_Ejer03
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            this.textImporte.Clear();
+            /*this.textImporte.Clear();
             this.textDescuento.Clear();
-            this.textTotalPagar.Clear();
+            this.textTotalPagar.Clear();*/
+
+            //this.groupBox1.Controls.Clear();
+
+            foreach (Control controles in this.groupBox1.Controls)
+            {
+                //Operador indica que la variable que tiene en la izquierda es igual a la que tiene a la derecha
+                if(controles is TextBox)
+                   ((TextBox)controles).Clear();
+            }
+
         }
     }
 }
