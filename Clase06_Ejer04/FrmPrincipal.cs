@@ -98,10 +98,36 @@ namespace Clase06_Ejer04
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            this.textNewNumber.Clear();
+            /*this.textNewNumber.Clear();
             this.listNumeros.Items.Clear();
             this.rBtnAscendete.Checked = false;
-            this.rBtnDescendente.Checked = false;
+            this.rBtnDescendente.Checked = false;*/
+
+            foreach (Control controlesGroupBox in this.Controls)
+            {
+                if(controlesGroupBox is GroupBox)
+                {
+                    foreach  (Control controles in controlesGroupBox.Controls)
+                    {
+                        if(controles is TextBox)
+                        {
+                            ((TextBox)controles).Clear();
+                            continue;
+                        }
+                        if (controles is ListBox)
+                        {
+                            ((ListBox)controles).Items.Clear();
+                            continue;
+                        }
+                        if (controles is RadioButton)
+                        {
+                            ((RadioButton)controles).Checked = false;
+                            continue;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
