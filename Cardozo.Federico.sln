@@ -41,7 +41,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiBiblioteca", "MiBibliotec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase03_Boligrafo", "Clase03_Boligrafo\Clase03_Boligrafo.csproj", "{ADCDB9A0-1E70-47D8-891D-4AFF261CFDF3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase05", "Clase05\Clase05.csproj", "{D3F2745F-F7B0-4E5E-9691-8F289A6B1D01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase07", "Clase05\Clase07.csproj", "{D3F2745F-F7B0-4E5E-9691-8F289A6B1D01}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria", "Libreria\Libreria.csproj", "{CBE863FB-8953-47F0-BC97-ABEEC8EA35B2}"
 EndProject
@@ -49,9 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase06_Ejer01", "Clase06_E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase06_Ejer02", "Clase06_Ejer02\Clase06_Ejer02.csproj", "{52AF1EF1-375C-4E4B-A1CE-7050FCF2F496}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase06_Ejer03", "Clase06_Ejer03\Clase06_Ejer03.csproj", "{90A84DF8-19C3-4AC3-BCE7-05F39B50D302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase06_Ejer03", "Clase06_Ejer03\Clase06_Ejer03.csproj", "{90A84DF8-19C3-4AC3-BCE7-05F39B50D302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase06_Ejer04", "Clase06_Ejer04\Clase06_Ejer04.csproj", "{64245510-C484-4B3A-A86F-9230FBBCE0D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase06_Ejer04", "Clase06_Ejer04\Clase06_Ejer04.csproj", "{64245510-C484-4B3A-A86F-9230FBBCE0D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
