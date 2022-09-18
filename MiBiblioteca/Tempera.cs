@@ -83,26 +83,26 @@ namespace MiBiblioteca
 
         public static Tempera operator +(Tempera tempera1, Tempera tempera2)
         {
-            Tempera aux = new Tempera();
+            //Tempera aux = new Tempera();
 
             if (tempera1 == tempera2)
-                aux.cantidad = tempera1.cantidad + (int)tempera2;
+                tempera1.cantidad += tempera2.cantidad;
 
-            return aux;
+            return tempera1;
         }
 
         public static Tempera operator +(Tempera tempera1, int cantidad)
         {
-            Tempera aux = new Tempera();
+            Tempera aux = new Tempera(tempera1.color,tempera1.marca,cantidad);
 
             /*aux.cantidad = tempera1.cantidad + cantidad;
 
             return aux; */
 
-            aux = tempera1;
-            aux.cantidad = cantidad;
+            /*aux = tempera1;
+            aux.cantidad = cantidad;*/
 
-            return tempera1 + aux;
+            return tempera1 += aux;
 
         }
 
