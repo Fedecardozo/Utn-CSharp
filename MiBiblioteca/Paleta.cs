@@ -39,12 +39,14 @@ namespace MiBiblioteca
         {
             StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine($"Cantidad maxima de colores: {this.cantidadMaximaColores}");
+            sb.AppendLine("");
+            
             foreach (Tempera item in this.temperas)
             {
                 sb.AppendLine($"{Tempera.Mostrar(item)}");
             }
 
-            //sb.AppendLine($"Cantidad maxima de colores: {this.cantidadMaximaColores}");
 
             return sb.ToString();
         }
@@ -126,7 +128,7 @@ namespace MiBiblioteca
             {
                 paleta.temperas[indice] += tempera*-1;
 
-                if (paleta.temperas.Count <= 0)
+                if (paleta.temperas[indice] <= 0)
                 {
                     paleta.temperas.RemoveAt(indice);
                 }
@@ -150,6 +152,24 @@ namespace MiBiblioteca
 
             return aux;
 
+        }
+
+
+        public Tempera this[int index]
+        {
+            get
+            {
+                if (index >= 0 && index < this.temperas.Count)
+                    return temperas[index];
+                else
+                    return null;
+            }
+            set
+            {
+                if (index >= 0 && index < this.temperas.Count)
+                    temperas[index] = value;
+               
+            }
         }
 
     }
