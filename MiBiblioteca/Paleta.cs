@@ -167,10 +167,22 @@ namespace MiBiblioteca
             set
             {
                 if (index >= 0 && index < this.temperas.Count)
-                    temperas[index] = value;
+                {
+                    if (value > 0)
+                        temperas[index] = value;
+                    else
+                        temperas.RemoveAt(index);
+                }
                
             }
         }
 
+        public int CantidadTemperas 
+        {
+            get
+            {
+                return this.temperas.Count;
+            }
+        }
     }
 }

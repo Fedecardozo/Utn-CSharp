@@ -108,5 +108,23 @@ namespace MiBiblioteca
 
         #endregion
 
+        public string Marca 
+        { 
+            get
+            {
+                return this.marca;
+            }
+                
+        }
+
+        public ConsoleColor Color
+        {
+            get
+            {
+                return this.color;
+            }
+
+        }
+
     }
 }
