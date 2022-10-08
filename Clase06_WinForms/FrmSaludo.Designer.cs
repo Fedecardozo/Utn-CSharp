@@ -57,7 +57,7 @@ namespace Clase06_WinForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 198);
+            this.ClientSize = new System.Drawing.Size(672, 198);
             this.Controls.Add(this.labelNombreApellido);
             this.Controls.Add(this.labelHola);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

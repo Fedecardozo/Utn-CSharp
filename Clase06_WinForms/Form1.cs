@@ -19,7 +19,12 @@ namespace Clase06_WinForms
 
         private void btnSaludar_Click(object sender, EventArgs e)
         {
-            string mensaje = $"Soy {this.textBoxNombre.Text} {this.textBoxApellido.Text}";
+
+            this.comboBoxMateria.SelectedIndex = 0;
+
+            string mensaje = $"Soy {this.textBoxNombre.Text} " +
+                $"{this.textBoxApellido.Text} y mi materia favorita es" +
+                $" {this.comboBoxMateria.SelectedItem}";
 
             FrmSaludo frmSaludo = new FrmSaludo("¡Hola, Windows Forms!",mensaje);
 

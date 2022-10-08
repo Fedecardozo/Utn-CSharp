@@ -34,6 +34,8 @@ namespace Clase06_WinForms
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.btnSaludar = new System.Windows.Forms.Button();
+            this.labelMateria = new System.Windows.Forms.Label();
+            this.comboBoxMateria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -72,7 +74,7 @@ namespace Clase06_WinForms
             // 
             // btnSaludar
             // 
-            this.btnSaludar.Location = new System.Drawing.Point(335, 138);
+            this.btnSaludar.Location = new System.Drawing.Point(333, 204);
             this.btnSaludar.Name = "btnSaludar";
             this.btnSaludar.Size = new System.Drawing.Size(171, 29);
             this.btnSaludar.TabIndex = 4;
@@ -80,11 +82,44 @@ namespace Clase06_WinForms
             this.btnSaludar.UseVisualStyleBackColor = true;
             this.btnSaludar.Click += new System.EventHandler(this.btnSaludar_Click);
             // 
+            // labelMateria
+            // 
+            this.labelMateria.AutoSize = true;
+            this.labelMateria.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelMateria.Location = new System.Drawing.Point(59, 120);
+            this.labelMateria.Name = "labelMateria";
+            this.labelMateria.Size = new System.Drawing.Size(154, 25);
+            this.labelMateria.TabIndex = 5;
+            this.labelMateria.Text = "Materia favorita";
+            // 
+            // comboBoxMateria
+            // 
+            this.comboBoxMateria.FormattingEnabled = true;
+            this.comboBoxMateria.Items.AddRange(new object[] {
+            "Ingles I",
+            "Matematica",
+            "Programacion I",
+            "Laboratorio I",
+            "Sistema de procesamiento de datos",
+            "Ingles II",
+            "Estadistica",
+            "Metodologia de la Investigacion",
+            "Arquitectura de sistemas operativos",
+            "Programacion II",
+            "Laboratorio II"});
+            this.comboBoxMateria.Location = new System.Drawing.Point(59, 161);
+            this.comboBoxMateria.Name = "comboBoxMateria";
+            this.comboBoxMateria.Size = new System.Drawing.Size(416, 28);
+            this.comboBoxMateria.TabIndex = 6;
+            this.comboBoxMateria.Text = "Seleccione materia favorita";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 198);
+            this.ClientSize = new System.Drawing.Size(527, 267);
+            this.Controls.Add(this.comboBoxMateria);
+            this.Controls.Add(this.labelMateria);
             this.Controls.Add(this.btnSaludar);
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
@@ -108,6 +143,8 @@ namespace Clase06_WinForms
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxApellido;
         private System.Windows.Forms.Button btnSaludar;
+        private System.Windows.Forms.Label labelMateria;
+        private System.Windows.Forms.ComboBox comboBoxMateria;
     }
 }
 
