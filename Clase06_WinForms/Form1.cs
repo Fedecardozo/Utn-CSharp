@@ -19,19 +19,50 @@ namespace Clase06_WinForms
 
         private void btnSaludar_Click(object sender, EventArgs e)
         {
+            string nombre = this.textBoxNombre.Text;
+            string apellido = this.textBoxApellido.Text;
+            string materia = (string) this.comboBoxMateria.SelectedItem;        
+            StringBuilder sb = new StringBuilder();
+            bool flag = false;
 
-            this.comboBoxMateria.SelectedIndex = 0;
+            sb.AppendLine("Le falto completar los siguientes campos:");
+        
+            if(string.IsNullOrWhiteSpace(nombre))
+            {
+                sb.AppendLine("Nombre");
+                flag = true;
+            }
+            if (string.IsNullOrWhiteSpace(apellido))
+            {
+                sb.AppendLine("Apellido");
+                flag = true;
+            }
 
-            string mensaje = $"Soy {this.textBoxNombre.Text} " +
-                $"{this.textBoxApellido.Text} y mi materia favorita es" +
-                $" {this.comboBoxMateria.SelectedItem}";
+            if(flag)
+            {
+                MessageBox.Show(sb.ToString(),"Error",
+                    MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                string mensaje = $"Soy {nombre} " +
+                    $"{apellido} y mi materia favorita es" +
+                    $" {materia}";
 
-            FrmSaludo frmSaludo = new FrmSaludo("¡Hola, Windows Forms!",mensaje);
+                FrmSaludo frmSaludo = new FrmSaludo("¡Hola, Windows Forms!",mensaje);
 
-            frmSaludo.ShowDialog();
+                frmSaludo.ShowDialog();
+
+            }
+
 
             //this.Hide();
 
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            this.comboBoxMateria.SelectedIndex = 0;
         }
     }
 }
