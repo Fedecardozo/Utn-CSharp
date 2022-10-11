@@ -52,5 +52,10 @@ namespace Lavadero_Clase09
 
         }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
     }
 }
