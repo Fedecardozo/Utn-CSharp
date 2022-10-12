@@ -16,7 +16,7 @@ namespace ExeptionPropia
 
         private string mensaje;
 
-        public MiPropiaExeption() : this("Esta es mi exepcion") { }
+        public MiPropiaExeption() : this("Esta es mi exepcion ") { }
 
         public MiPropiaExeption(string message)
         { 
@@ -37,6 +37,31 @@ namespace ExeptionPropia
                 return this.mensaje;
             }
     
+        }
+
+        public void MetodoExepcion()
+        {
+            try
+            {
+                MiPropiaExeption.MetodoExepcionStatic();
+            }
+            catch (MiPropiaExeption e)
+            {
+                throw new MiPropiaExeption("Metodo instancia ", e);
+            }
+        }
+
+        public static void MetodoExepcionStatic()
+        {
+            try
+            {
+                int[] num = new int[2];
+                num[0] = 1; num[1] = 2; num[3] = 3;
+            }
+            catch(Exception)
+            {
+                throw new MiPropiaExeption("Metodo estatico ");
+            }
         }
     }
 }
