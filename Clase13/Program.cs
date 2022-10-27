@@ -13,7 +13,7 @@ namespace Clase13
             #endregion
 
             #region Burbujeo
-
+            /*
             try
             {
                 Program.Metodo1();
@@ -27,11 +27,46 @@ namespace Clase13
                 Console.WriteLine(e.Message);
 
             }
-
+            */
             #endregion
+
+            /*Siguiendo con la misma lógica del ejercicio anterior, se pide: Realizar el burbujeo de una excepción propia, 
+              comenzando en un método de instancia, pasando por un método de estático y capturando por última vez en el “main”.*/
+
+            try
+            {
+                (new Program()).MetodoInstancia();
+            }
+            catch (MiExepcion e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
 
         }
 
+        #region Burbujeo método de instancia, pasando por un método de estático y capturando por última vez en el “main”
+
+        public void MetodoInstancia()
+        {
+            try
+            {
+                Program.MetodoEstatico();
+            }
+            catch (MiExepcion e)
+            {
+                throw new MiExepcion("Metodo instancia", e);
+            }
+        }
+
+        public static void MetodoEstatico()
+        {
+            throw new MiExepcion("Metodo estatico");
+        }
+
+        #endregion
+
+        #region Burbujeo metodos
         public static void Metodo1()
         {
             try
@@ -59,7 +94,7 @@ namespace Clase13
         {
             throw new MiExepcion("Metodo 3");
         }
-
+        #endregion
     }
     public static class NumeroEntero
     {
@@ -104,11 +139,11 @@ namespace Clase13
         }
             public string Mensaje { get { return this.mensaje; } }
         */
-        #endregion
+#endregion
 
-        #region Idea mas basica
+            #region Idea mas basica
 
-        public MiExepcion(string msj): base(msj) { }
+            public MiExepcion(string msj): base(msj) { }
 
         public MiExepcion(string msj, Exception inner) : base(msj + " " + inner.Message) { }
 
