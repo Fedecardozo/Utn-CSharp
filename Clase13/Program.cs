@@ -20,7 +20,12 @@ namespace Clase13
             }
             catch(MiExepcion e)
             {
-               Console.WriteLine(e.Mensaje);
+                //Primera idea
+                //Console.WriteLine(e.Mensaje);
+
+                //Segunda idea
+                Console.WriteLine(e.Message);
+
             }
 
             #endregion
@@ -81,7 +86,9 @@ namespace Clase13
 
     public class MiExepcion : Exception
     {
-        private string mensaje;
+        #region Mi primera idea
+
+        /*private string mensaje;
         public MiExepcion(string msj)
         {
             this.mensaje = msj;
@@ -95,10 +102,18 @@ namespace Clase13
         {
             
         }
+            public string Mensaje { get { return this.mensaje; } }
+        */
+        #endregion
 
-        public string Mensaje { get { return this.mensaje; } }
+        #region Idea mas basica
 
-        
+        public MiExepcion(string msj): base(msj) { }
+
+        public MiExepcion(string msj, Exception inner) : base(msj + " " + inner.Message) { }
+
+        #endregion
+    
     }
 
 }
