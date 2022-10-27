@@ -35,7 +35,7 @@ namespace Clase13
 
             try
             {
-                (new Program()).MetodoInstancia();
+                (new Program()).ComienzaTry();
             }
             catch (MiExepcion e)
             {
@@ -46,6 +46,18 @@ namespace Clase13
         }
 
         #region Burbujeo método de instancia, pasando por un método de estático y capturando por última vez en el “main”
+
+        public void ComienzaTry()
+        {
+            try
+            {
+                (new Program()).MetodoInstancia();
+            }
+            catch (MiExepcion e)
+            {
+                throw new MiExepcion("Comienza el lanzamiento",e);
+            }
+        }
 
         public void MetodoInstancia()
         {
