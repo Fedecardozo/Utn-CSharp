@@ -71,9 +71,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreriaIntegrador2020", "L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integrador2020", "Integrador2020\Integrador2020.csproj", "{469A3E9A-C136-4903-BFA5-5DCCC0298247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseExepciones", "ClaseExepciones\ClaseExepciones.csproj", "{23793799-31D5-4F58-A610-0B7CAC5BBAEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaseExepciones", "ClaseExepciones\ClaseExepciones.csproj", "{23793799-31D5-4F58-A610-0B7CAC5BBAEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExeptionPropia", "ExeptionPropia\ExeptionPropia.csproj", "{C560F3D4-76CC-41BC-97E4-076B9855CDC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExeptionPropia", "ExeptionPropia\ExeptionPropia.csproj", "{C560F3D4-76CC-41BC-97E4-076B9855CDC7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase_01", "Clase_01", "{24B51D03-7898-484E-A73D-A7B82BF8CDE8}"
 EndProject
@@ -88,6 +88,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase_07", "Clase_07", "{11F1C2FB-D8BC-4A67-BFA0-EA2F93E76673}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase_08_a_10", "Clase_08_a_10", "{2D344294-AB0B-411F-A301-720AA33AF1B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase_13_Exepciones", "Clase_13_Exepciones", "{DD3BB86D-346F-4473-B2AC-1DC643196F0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase13", "Clase13\Clase13.csproj", "{7BB70D2A-7546-45BF-9A50-538191C57BE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -239,6 +243,10 @@ Global
 		{C560F3D4-76CC-41BC-97E4-076B9855CDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C560F3D4-76CC-41BC-97E4-076B9855CDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C560F3D4-76CC-41BC-97E4-076B9855CDC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB70D2A-7546-45BF-9A50-538191C57BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB70D2A-7546-45BF-9A50-538191C57BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB70D2A-7546-45BF-9A50-538191C57BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB70D2A-7546-45BF-9A50-538191C57BE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -271,6 +279,7 @@ Global
 		{F9C892CF-D101-4A6E-A2B3-56A983B47EEF} = {0E5C7B22-64BB-4008-9986-B25E5DE2E12D}
 		{BDED684D-3E48-4610-A27E-088D99DA8A5C} = {230E5AF0-E685-4414-ACCB-A7C028EF9C31}
 		{49329D7F-AA72-4702-BD28-B3A27C6C1915} = {F5622404-0BE7-4AB3-9764-99F5826A9DED}
+		{7BB70D2A-7546-45BF-9A50-538191C57BE1} = {DD3BB86D-346F-4473-B2AC-1DC643196F0D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8366B334-49CE-439E-A622-374617B870EA}
