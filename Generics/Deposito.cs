@@ -94,7 +94,7 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("Capacidad maxima deposito: " + this.capacidadMaxima);
-            sb.AppendLine($"Listado deposito: ");
+            sb.AppendLine($"Listado deposito {typeof(T).Name}: ");
 
             foreach (T item in this.lista)
             {
