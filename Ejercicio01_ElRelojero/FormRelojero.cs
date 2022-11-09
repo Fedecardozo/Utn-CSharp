@@ -29,20 +29,28 @@ namespace Ejercicio01_ElRelojero
         {
             while (true)
             {
-                Thread.Sleep(1000);
                 this.AsignarHora();
+                Thread.Sleep(1000);
             }
         }
 
+        /// <summary>
+        /// Esto es un metodo recursivo
+        /// </summary>
         private void AsignarHora()
         {
-            if(this.lblHora.InvokeRequired)
+            //Si esta en el mismo hilo del form va a decir true Sino false
+            if(this.InvokeRequired)
             {
+                //A mi delegador le paso el mismo metodo
                 this.actualizarHora = this.AsignarHora;
-                this.lblHora.Invoke(this.actualizarHora);
+                
+                //Invoca al delegado desde el hilo del formulario
+                this.Invoke(this.actualizarHora);
             }
             else
             {
+                //Si no esta en el mismo hilo del form, cambia el texto del label
                 this.lblHora.Text = DateTime.Now.ToString();
             }
         }
